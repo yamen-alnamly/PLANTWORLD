@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     
 }
 body
 {
     background-color: #042f1a;
     overflow-x: hidden;
+    transition: all 1s;
 }
 #header-items 
 {
@@ -548,6 +550,7 @@ footer input
     display: flex;
     align-items: center;
 }
+
 footer input:nth-child(3)
 {
     width: 200px;
@@ -606,11 +609,36 @@ footer #links div:nth-child(2)
     color: #042f1a;
     letter-spacing: -2px;
 }
+#menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    line-height: 150px;
+}
+#menu a
+{ 
+    margin-bottom: -30px;
+   text-decoration: none;
+   color: white;
+   font-size: 110px;
+   font-weight: 900;
+   z-index: 1;
+   letter-spacing: -10px;
+}
+
+
+
+
 
 @media only screen and (max-width: 700px)
 {
-    *
-    {overflow-x: hidden;}
+
+    {
+        overflow-x: hidden;
+    }
     #header-items
     {
       transform: scale(0.6);
